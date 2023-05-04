@@ -14,15 +14,20 @@ const Home2 = () => {
         setBlogs(newBlogs)
     }
 
+    const [name,setName] = useState('mario')
+
     useEffect(()=>{
         console.log('UseEffect ran!')
-    });
+    },[name]);
 
     return (
         <div className="home">
             {/* To loop through a list in react */}
             <BlogList blogs={blogs} title="All Blogs:" handleDelete={handleDelete} />
             <BlogList blogs={blogs.filter(blog => blog.author === 'mario')} title={"Mario's Blogs:"} handleDelete={handleDelete}></BlogList>
+            
+            <button onClick={()=>{setName('luigi')}}>Change name</button>
+            <p>{name}</p>  
         </div>
     );
 }

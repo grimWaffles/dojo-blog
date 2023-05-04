@@ -1,20 +1,27 @@
 import Navbar from './components/Navbar';
-import Home from './views/Home';
-import Home2 from './views/Home2';
+import Create from './views/Create';
+import Home3 from './views/Home3';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+
 function App() {
   //Write JS here
   // const title = 'Welcome to the new blog'
   // const likes = 50
   //End JS 
   return (
-    <div className="App">
-      <Navbar/>
-      <div className="content">
-        {/* <h1>{title}</h1>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          {/* <h1>{title}</h1>
         <p>liked {likes} times</p> */}
-        <Home2/>
+          <Switch>
+            <Route exact path="/"><Home3/></Route>
+            <Route exact path="/create"><Create/></Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
