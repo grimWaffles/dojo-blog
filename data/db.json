@@ -1,7 +1,28 @@
 {
-    "blogs":[
-        { "title": "My new website", "body": "lorem ipsum...", "author": "mario", "id": 1 },
-        { "title": "Welcome party!", "body": "lorem ipsum...", "author": "yoshi", "id": 2 },
-        { "title": "Web dev top tips", "body": "lorem ipsum...", "author": "mario", "id": 3 }
-    ]
+  "blogs": [
+    {
+      "title": "My new website",
+      "body": "lorem ipsum...",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "Welcome party!",
+      "body": "lorem ipsum...",
+      "author": "yoshi",
+      "id": 2
+    },
+    {
+      "title": "Web dev top tips",
+      "body": "lorem ipsum...",
+      "author": "mario",
+      "id": 3
+    },
+    {
+      "title": "Blogs using inputs",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum dolor quo commodi totam eius, inventore soluta rerum temporibus veniam alias, eligendi libero reprehenderit laudantium harum illum recusandae. Fuga minima officiis numquam modi. Possimus quod repellat optio, sit neque ducimus enim laudantium saepe sint atque rerum harum mollitia veniam ipsam! Fugiat!",
+      "author": "yoshi",
+      "id": 4
+    }
+  ]
 }
